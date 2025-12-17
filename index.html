@@ -236,7 +236,311 @@
 
 <div class="hero">
     <div class="hero-content">
-        <h1>BModa Check</h1>
+        <h1>Moda Check</h1>
+        <p>Ropa de mujer elegante, moderna y con estilo único</p>
+        <button onclick="document.getElementById('ropa').scrollIntoView({behavior:'smooth'})">
+            Ver Productos
+        </button>
+    </div>
+</div>
+
+<div class="container" id="ropa">
+    <div class="producto"><img src="imagenes/pantalones.jpg"><h2>Pantalones</h2></div>
+    <div class="producto"><img src="imagenes/blusas.jpg"><h2>Blusas</h2></div>
+    <div class="producto"><img src="imagenes/tenis.jpg"><h2>Tenis</h2></div>
+    <div class="producto"><img src="imagenes/tacones.jpg"><h2>Tacones</h2></div>
+    <div class="producto"><img src="imagenes/accesorios.jpg"><h2>Accesorios</h2></div>
+    <div class="producto"><img src="imagenes/sudaderas.jpg"><h2>Sudaderas</h2></div>
+</div>
+
+<div class="mision-vision">
+    <h2>Nuestra Empresa</h2>
+
+    <h3>Misión</h3>
+    <p>
+        Ofrecer ropa elegante y de diseñador para mujeres de todas las edades y tipos de cuerpo,
+        brindando calidad, estilo y comodidad, así como una atención personalizada y envíos seguros
+        tanto en nuestra tienda en línea como en nuestra tienda física.
+    </p>
+
+    <h3>Visión</h3>
+    <p>
+        Ser una tienda de referencia en moda femenina elegante, reconocida por su inclusión,
+        calidad y excelente servicio al cliente.
+    </p>
+
+    <h3>Objetivo</h3>
+    <p>
+        Vender ropa elegante y moderna para todos los cuerpos, ofreciendo prendas de diseñador,
+        atención de calidad, envíos eficientes y una experiencia de compra confiable.
+    </p>
+</div>
+
+<div class="contacto" id="contacto">
+    <h2>Atención al Cliente</h2>
+    <p>Teléfono: +52 55 1234 5678</p>
+    <p>Correo: contacto@tiendaderopa.com</p>
+    <p>Ubicación: Ciudad de México, México</p>
+
+    <form onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente');">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea rows="4" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<!-- BOTÓN DOCUMENTACIÓN -->
+<div class="documentacion">
+    <a href="documentos/documentacion.pdf" target="_blank">
+        <button>Documentación</button>
+    </a>
+</div>
+
+<footer>
+    <p>&copy; 2025 Tienda Elegante de Ropa de Mujer. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda Elegante de Ropa Mujer</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    /* Navbar */
+    nav {
+        background-color: #1c1c1c;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: #f8f8f8;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff6f91;
+    }
+
+    /* Hero */
+    .hero {
+        background: url('imagenes/hero_banner.jpg') center/cover no-repeat;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .hero button {
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: #ff6f91;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .hero button:hover {
+        background-color: #ff4c70;
+    }
+
+    /* Productos */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 20px;
+    }
+
+    .producto {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        margin: 20px;
+        width: 240px;
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .producto:hover {
+        transform: translateY(-5px);
+    }
+
+    .producto img {
+        width: 220px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .producto h2 {
+        margin-top: 15px;
+    }
+
+    /* Misión, Visión */
+    .mision-vision {
+        background-color: white;
+        padding: 50px 30px;
+        margin: 40px auto;
+        max-width: 900px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .mision-vision h2 {
+        text-align: center;
+        color: #ff6f91;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .mision-vision h3 {
+        margin-bottom: 10px;
+        color: #1c1c1c;
+    }
+
+    .mision-vision p {
+        margin-bottom: 25px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Contacto */
+    .contacto {
+        background-color: white;
+        padding: 40px 30px;
+        margin: 40px auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        max-width: 600px;
+    }
+
+    .contacto h2 {
+        text-align: center;
+        color: #ff6f91;
+    }
+
+    .contacto form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+        margin-bottom: 15px;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    .contacto button {
+        padding: 12px;
+        border: none;
+        background-color: #ff6f91;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    /* Documentación */
+    .documentacion {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .documentacion button {
+        padding: 14px 35px;
+        font-size: 16px;
+        background-color: #1c1c1c;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .documentacion button:hover {
+        background-color: #ff6f91;
+    }
+
+    footer {
+        background-color: #1c1c1c;
+        color: #f8f8f8;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="pantalones.html">Pantalones</a>
+    <a href="blusas.html">Blusas</a>
+    <a href="zapatos.html">Zapatos</a>
+    <a href="tenis.html">Tenis</a>
+    <a href="accesorios.html">Accesorios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Bienvenida a Nuestra Tienda</h1>
         <p>Ropa de mujer elegante, moderna y con estilo único</p>
         <button onclick="document.getElementById('ropa').scrollIntoView({behavior:'smooth'})">
             Ver Productos
@@ -303,4 +607,3 @@
 
 </body>
 </html>
-
