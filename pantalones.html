@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pantalones - Tienda Elegante de Ropa Mujer</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    /* Navbar elegante */
+    nav {
+        background-color: #1c1c1c;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: #f8f8f8;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff6f91;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(to right, #ff6f91, #ffb6b9);
+        color: white;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    /* Productos */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 20px;
+    }
+
+    .producto {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        margin: 20px;
+        width: 240px;
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .producto:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .producto img {
+        width: 220px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .producto h2 {
+        font-size: 20px;
+        margin: 15px 0 10px 0;
+        color: #1c1c1c;
+    }
+
+    .producto p {
+        font-size: 15px;
+        color: #555;
+    }
+
+    .precio {
+        color: #ff6f91;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    footer {
+        background-color: #1c1c1c;
+        color: #f8f8f8;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="pantalones.html">Pantalones</a>
+    <a href="blusas.html">Blusas</a>
+    <a href="zapatos.html">Zapatos</a>
+    <a href="tenis.html">Tenis</a>
+    <a href="accesorios.html">Accesorios</a>
+</nav>
+
+<header>
+    <h1>Pantalones de Mujer</h1>
+    <p>Elegancia y comodidad para cada ocasión</p>
+</header>
+
+<!-- Productos de pantalones -->
+<div class="container" id="pantalones">
+    <div class="producto">
+        <img src="imagenes/pantalon_negro.jpg" alt="Pantalón Negro">
+        <h2>Pantalón Negro</h2>
+        <p>Básico, versátil y elegante</p>
+        <p class="precio">$300</p>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/pantalon_azul.jpg" alt="Pantalón Azul">
+        <h2>Pantalón Azul</h2>
+        <p>Perfecto para looks casuales o de oficina</p>
+        <p class="precio">$320</p>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/pantalon_blanco.jpg" alt="Pantalón Blanco">
+        <h2>Pantalón Blanco</h2>
+        <p>Elegante y moderno, combina con todo</p>
+        <p class="precio">$350</p>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/pantalon_cafe.jpg" alt="Pantalón Café">
+        <h2>Pantalón Café</h2>
+        <p>Estilo casual y cómodo</p>
+        <p class="precio">$330</p>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/pantalon_gris.jpg" alt="Pantalón Gris">
+        <h2>Pantalón Gris</h2>
+        <p>Ideal para oficina y eventos formales</p>
+        <p class="precio">$340</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Tienda Elegante de Ropa de Mujer. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
